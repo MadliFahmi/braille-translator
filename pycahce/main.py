@@ -12,7 +12,7 @@ from SegmentationEngine import SegmentationEngine
 from BrailleClassifier import BrailleClassifier
 
 
-def save_feedback_to_excel(feedback_entry, filename="braille_feedback.xlsx"):
+def save_feedback_to_excel(feedback_entry, filename="book.xlsx"):
     """Append feedback to Excel file - for admin/researcher use only"""
     try:
         # Check if file exists
@@ -256,9 +256,36 @@ def main():
         st.write("")
 
     st.markdown(""" <p style='color: white; font-size: 1rem; margin-top: 0px;'>
-               Final Year Project : Development of Malay Braille Recognition System
-            </p>
-        """, unsafe_allow_html=True)
+               ### Assalamualaikum & Hello! 👋</p>""", unsafe_allow_html=True)
+    st.markdown(""" <p style='color: white; font-size: 1rem; margin-top: 0px;'>
+                  "Saya Muhammad Adli Fahmi Bin Tajul Aris, pelajar tahun akhir di Universiti Islam Antarabangsa Malaysia (IIUM), 
+    Fakulti Kejuruteraan.
+    
+    *I am Muhammad Adli Fahmi Bin Tajul Aris, a final year student at the **International Islamic University Malaysia (IIUM)**, 
+    Kulliyyah of Engineering.*"</p>""", unsafe_allow_html=True)
+
+    st.markdown(""" <p style='color: white; font-size: 1rem; margin-top: 0px;'>
+                   ### 🎯 Tentang Projek Ini / About This Project"</p>""", unsafe_allow_html=True)
+
+    st.markdown("""
+    Penterjemah Braille ke Teks ini dibangunkan sebagai **Projek Tahun Akhir (FYP2)** untuk membantu 
+    masyarakat dalam menterjemahkan imej Braille kepada teks Bahasa Melayu dengan mudah dan pantas.
+
+    *This Braille to Text Translator was developed as my **Final Year Project (FYP2)** to help 
+    the community translate Braille images to Malay text easily and quickly.*
+    """)
+
+    # Call to Action
+    st.markdown("""" <p style='color: white; font-size: 1rem; margin-top: 0px;'>
+    💡 **Bantu saya meningkatkan sistem ini! / Help me improve this system!**
+
+    Selepas menterjemah Braille anda, sila luangkan masa untuk memberikan maklum balas di bahagian bawah halaman ini.
+    Maklum balas anda sangat berharga untuk penambahbaikan projek ini.
+
+    *After translating your Braille, please take a moment to provide feedback at the bottom of this page.
+    Your feedback is invaluable for improving this project.*</p>""", unsafe_allow_html=True
+    )
+
     # Info box
     st.markdown("""
         <div class="info-box">
@@ -401,10 +428,10 @@ def main():
     st.markdown("---")
     st.markdown("### 📝 Maklum Balas & Penilaian Ketepatan / Feedback & Accuracy Rating")
     st.markdown(
-        "<p style='color: rgba(255,255,255,0.8);'>Bantu kami memperbaiki penterjemah Braille dengan menilai ketepatan dan melaporkan sebarang terjemahan yang tidak betul.</p>",
+        "<p style='color: rgba(255,255,255,0.8);'>Bantu saya memperbaiki penterjemah Braille dengan menilai ketepatan dan melaporkan sebarang terjemahan yang tidak betul.</p>",
         unsafe_allow_html=True)
     st.markdown(
-        "<p style='color: rgba(255,255,255,0.8);'>Help us improve the Braille translator by rating the accuracy and reporting any incorrect translations.</p>",
+        "<p style='color: rgba(255,255,255,0.8);'>Help me improve the Braille translator by rating the accuracy and reporting any incorrect translations.</p>",
         unsafe_allow_html=True)
 
     # Create two columns for feedback
@@ -453,7 +480,7 @@ def main():
     with feedback_col2:
         st.markdown("#### 🔤 Laporkan Terjemahan Yang Salah / Report Incorrect Translation")
         st.markdown(
-            "<p style='color: rgba(255,255,255,0.7); font-size: 0.9rem;'>Jumpa perkataan yang tidak diterjemah dengan betul? Beritahu kami! / Found a word that was not translated correctly? Let us know!</p>",
+            "<p style='color: rgba(255,255,255,0.7); font-size: 0.9rem;'>Jumpa perkataan yang tidak diterjemah dengan betul? Beritahu saya! / Found a word that was not translated correctly? Let me know!</p>",
             unsafe_allow_html=True)
 
         # Incorrect word input
